@@ -255,7 +255,7 @@ function videojs_hls_video_embed_handler($atts)
     }
     
 	// Video.js Player
-	$output = '
+	$output = ' 
     <div class="videojs-hls-player-wrapper ' . $player . '">
 		<video id="' . $player . '" class="video-js vjs-default-skin vjs-fluid vjs-16-9 vjs-big-play-centered"' . $controls . $preload . $autoplay . $loop . $muted . $poster . ' data-setup=\'{"fluid":true,"plugins":{"airplayButton":{}}}\'' . $inline . '>
 			' . $src . '
