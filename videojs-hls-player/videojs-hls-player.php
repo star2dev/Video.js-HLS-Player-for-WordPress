@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Video.js HLS Player
-Version: 1.0.1
+Version: 1.0.2
 Plugin URI: http://www.socialite-media.com/videojs-hls-player-for-wordpress
 Author: Bruce Galpin
 Author URI: http://www.socialite-media.com/
-Description: Easily embed videos using video.js hls player
+Description: Easily embed responsive/fluid (or fixed width) HLS videos into WordPress posts and pages using this customized video.js player. Embedding externally hosted .m3u8 HLS video files couldn't be easier.
 Text Domain: videojs-hls-player
 Domain Path: /languages
 */
@@ -17,12 +17,10 @@ if (!defined('ABSPATH'))
 
 if (!class_exists('VIDEOJS_HLS_PLAYER')) 
 {
-
     class VIDEOJS_HLS_PLAYER 
 	{
-
-        var $plugin_version = '1.0.1';
-
+        var $plugin_version = '1.0.2';
+		
         function __construct() 
 		{
             define('VIDEOJS_HLS_PLAYER_VERSION', $this->plugin_version);
@@ -102,7 +100,6 @@ function videojs_hls_player_enqueue_scripts()
         
 		wp_register_script(
 			'videojs', 
-			//$plugin_url . '/videojs/video.js', 
 			'//vjs.zencdn.net/5.9.2/video.js', 
 			array('jquery'), 
 			VIDEOJS_HLS_PLAYER_VERSION, 
@@ -112,7 +109,7 @@ function videojs_hls_player_enqueue_scripts()
         
 		wp_register_script(
 			'videojs-hls', 
-			$plugin_url . '/videojs/videojs-contrib-hls.min.js', 
+			$plugin_url . '/videojs-contrib-hls/videojs-contrib-hls.min.js', 
 			array('jquery'), 
 			VIDEOJS_HLS_PLAYER_VERSION, 
 			true
@@ -121,7 +118,6 @@ function videojs_hls_player_enqueue_scripts()
         
 		wp_register_script(
 			'videojs-ie8', 
-			//$plugin_url . '/videojs/ie8/videojs-ie8.min.js', 
 			'//vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js', 
 			array('jquery'), 
 			VIDEOJS_HLS_PLAYER_VERSION
@@ -137,10 +133,18 @@ function videojs_hls_player_enqueue_scripts()
 		);
         wp_enqueue_script('videojs-airplay');
         
+		wp_register_script(
+			'videojs-custom', 
+			$plugin_url . '/videojs-hls-player.js', 
+			array('jquery'), 
+			VIDEOJS_HLS_PLAYER_VERSION, 
+			false
+		);
+        wp_enqueue_script('videojs-custom');
+        
 		// LOAD ALL CSS
 		wp_register_style(
 			'videojs', 
-			//$plugin_url . '/videojs/video-js.css'
 			'//vjs.zencdn.net/5.9.2/video-js.css'
 		);
         wp_enqueue_style('videojs');

@@ -138,6 +138,12 @@ Website: <a href="https://www.socialite-media.com/videojs-hls-player-for-wordpre
 </ol>
 <h3>Changelog</h3>
 
+<h4>1.0.2</h4>
+
+<ul>
+	<li>Pause other videos on play()</li>
+</ul>
+
 <h4>1.0.1</h4>
 
 <ul>

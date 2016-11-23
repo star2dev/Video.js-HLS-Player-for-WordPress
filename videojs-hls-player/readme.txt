@@ -4,15 +4,15 @@ Donate link: https://www.socialite-media.com/videojs-hls-player-for-wordpress
 Tags: video, wpvideo, hls, flash, html5, iPad, iphone, ipod, mobile, playlists, embed video, videojs, flash player, player, video player, embed, lightweight, minimal, myvideo, responsive  
 Requires at least: 4.2
 Tested up to: 4.6.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Embed video file beautifully in WordPress using Video.js HLS Player. Embed HTML5 compatible responsive video in your post/page with Video.js.
+Easily embed responsive/fluid (or fixed width) HLS videos into WordPress posts and pages using this customized video.js player.
 
 == Description ==
 
-[Video.js HLS Player](https://www.socialite-media.com/videojs-hls-player-for-wordpress) is a user-friendly plugin that supports HLS video playback on desktop and mobile devices. It's super easy to embed externally hosted .m3u8 HLS video packages using Video.js library.
+[Video.js HLS Player](https://www.socialite-media.com/videojs-hls-player-for-wordpress) is a user-friendly plugin that allows you to easily embed responsive/fluid (or fixed width) HLS videos into WordPress posts and pages using this customized video.js player. Embedding externally hosted .m3u8 HLS video files couldn't be easier.
 
 = Video.js HLS Player Features =
 
@@ -143,6 +143,10 @@ For screenshots please visit the [Video.js HLS Player] (https://www.socialite-me
 none
 
 == Changelog ==
+
+= 1.0.2 =
+
+* Pause other videos on play()
 
 = 1.0.1 =
 
