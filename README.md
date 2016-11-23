@@ -136,3 +136,17 @@ Website: <a href="https://www.socialite-media.com/videojs-hls-player-for-wordpre
 	<li>Browse for the plugin file (videojs-hls-player.zip) on your computer</li>
 	<li>Click &quot;Install Now&quot; and then hit the activate button</li>
 </ol>
+<h3>Changelog</h3>
+
+<h4>1.0.1</h4>
+
+<ul>
+	<li>Fixed data-setup json error</li>
+	<li>Loading video.js from vjs.zencdn.net</li>
+</ul>
+
+<h4>1.0</h4>
+
+<ul>
+	<li>First commit</li>
+</ul>

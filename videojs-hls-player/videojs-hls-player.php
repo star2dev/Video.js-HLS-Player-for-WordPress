@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Video.js HLS Player
-Version: 1.0
+Version: 1.0.1
 Plugin URI: http://www.socialite-media.com/videojs-hls-player-for-wordpress
 Author: Bruce Galpin
 Author URI: http://www.socialite-media.com/
@@ -21,7 +21,7 @@ if (!class_exists('VIDEOJS_HLS_PLAYER'))
     class VIDEOJS_HLS_PLAYER 
 	{
 
-        var $plugin_version = '1.0';
+        var $plugin_version = '1.0.1';
 
         function __construct() 
 		{

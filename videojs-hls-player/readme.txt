@@ -3,8 +3,8 @@ Contributors: Bruce Galpin
 Donate link: https://www.socialite-media.com/videojs-hls-player-for-wordpress
 Tags: video, wpvideo, hls, flash, html5, iPad, iphone, ipod, mobile, playlists, embed video, videojs, flash player, player, video player, embed, lightweight, minimal, myvideo, responsive  
 Requires at least: 4.2
-Tested up to: 4.6
-Stable tag: 1.0
+Tested up to: 4.6.1
+Stable tag: 1.0.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -143,6 +143,11 @@ For screenshots please visit the [Video.js HLS Player] (https://www.socialite-me
 none
 
 == Changelog ==
+
+= 1.0.1 =
+
+* Fixed data-setup json error
+* Loading video.js from vjs.zencdn.net
 
 = 1.0 =
 
