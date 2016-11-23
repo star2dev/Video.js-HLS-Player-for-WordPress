@@ -136,7 +136,10 @@ function videojs_hls_player_enqueue_scripts()
         wp_enqueue_script('videojs-airplay');
         
 		// LOAD ALL CSS
-		wp_register_style('videojs', $plugin_url . '/videojs/video-js.css');
+		wp_register_style(
+			'videojs', 
+			$plugin_url . '/videojs/video-js.css'
+		);
         wp_enqueue_style('videojs');
         
 		wp_register_style('videojs-style', $plugin_url . '/videojs-hls-player.css');
@@ -254,7 +257,7 @@ function videojs_hls_video_embed_handler($atts)
 	// Video.js Player
 	$output = '
     <div class="videojs-hls-player-wrapper ' . $player . '">
-		<video id="' . $player . '" class="video-js vjs-default-skin vjs-fluid vjs-16-9 vjs-big-play-centered"' . $controls . $preload . $autoplay . $loop . $muted . $poster . ' data-setup="{\'fluid\': true, \'plugins\':{\'airplayButton\':{}}}"' . $inline . '>
+		<video id="' . $player . '" class="video-js vjs-default-skin vjs-fluid vjs-16-9 vjs-big-play-centered"' . $controls . $preload . $autoplay . $loop . $muted . $poster . ' data-setup=\'{"fluid":true,"plugins":{"airplayButton":{}}}\'' . $inline . '>
 			' . $src . '
 			<p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
 		</video>
