@@ -1,5 +1,5 @@
 # [Video.js HLS Player] for WordPress
-[Video.js HLS Player] is a user-friendly plugin that supports HLS video playback on desktop and mobile devices. It's super easy to embed externally hosted .m3u8 HLS video packages using Video.js library on WordPress.
+[Video.js HLS Player] is a user-friendly plugin that allows you to easily embed responsive/fluid (or fixed width) HLS videos into WordPress posts and pages using this customized video.js player. Embedding externally hosted .m3u8 HLS video files couldn't be easier.
 Website: <a href="https://www.socialite-media.com/videojs-hls-player-for-wordpress">https://www.socialite-media.com/videojs-hls-player-for-wordpress</a>
 
 <h3>Video.js HLS Player Features</h3>
