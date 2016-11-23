@@ -102,7 +102,8 @@ function videojs_hls_player_enqueue_scripts()
         
 		wp_register_script(
 			'videojs', 
-			$plugin_url . '/videojs/video.js', 
+			//$plugin_url . '/videojs/video.js', 
+			'//vjs.zencdn.net/5.9.2/video.js', 
 			array('jquery'), 
 			VIDEOJS_HLS_PLAYER_VERSION, 
 			true
@@ -120,7 +121,8 @@ function videojs_hls_player_enqueue_scripts()
         
 		wp_register_script(
 			'videojs-ie8', 
-			$plugin_url . '/videojs/ie8/videojs-ie8.min.js', 
+			//$plugin_url . '/videojs/ie8/videojs-ie8.min.js', 
+			'//vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js', 
 			array('jquery'), 
 			VIDEOJS_HLS_PLAYER_VERSION
 		);
@@ -138,7 +140,8 @@ function videojs_hls_player_enqueue_scripts()
 		// LOAD ALL CSS
 		wp_register_style(
 			'videojs', 
-			$plugin_url . '/videojs/video-js.css'
+			//$plugin_url . '/videojs/video-js.css'
+			'//vjs.zencdn.net/5.9.2/video-js.css'
 		);
         wp_enqueue_style('videojs');
         
@@ -255,7 +258,7 @@ function videojs_hls_video_embed_handler($atts)
     }
     
 	// Video.js Player
-	$output = ' 
+	$output = '
     <div class="videojs-hls-player-wrapper ' . $player . '">
 		<video id="' . $player . '" class="video-js vjs-default-skin vjs-fluid vjs-16-9 vjs-big-play-centered"' . $controls . $preload . $autoplay . $loop . $muted . $poster . ' data-setup=\'{"fluid":true,"plugins":{"airplayButton":{}}}\'' . $inline . '>
 			' . $src . '
