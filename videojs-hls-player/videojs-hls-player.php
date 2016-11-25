@@ -138,7 +138,7 @@ function videojs_hls_player_enqueue_scripts()
 			$plugin_url . '/videojs-hls-player.js', 
 			array('jquery'), 
 			VIDEOJS_HLS_PLAYER_VERSION, 
-			false
+			true
 		);
         wp_enqueue_script('videojs-custom');
         
