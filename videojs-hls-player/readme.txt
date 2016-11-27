@@ -17,17 +17,16 @@ Easily embed responsive/fluid (or fixed width) HLS videos into WordPress posts a
 = Video.js HLS Player Features =
 
 * Embed HLS video package into a post/page or anywhere on your WordPress site
-* Embed MP4 video files into a post/page or anywhere on your WordPress site
 * Embed responsive videos for a better user experience while viewing from a mobile device
 * Embed HTML5 videos which are compatible with all major browsers
 * Embed videos with poster images
 * Embed videos using videojs player
 * Automatically play a video when the page is rendered
-* Embed videos uploaded to your WordPress media library using direct links in the shortcode
+* Embed fallback videos uploaded to your WordPress media library using direct links in the shortcode
 * No setup required, simply install and start embedding videos
 * Lightweight and compatible with the latest version of WordPress
 * Clean and sleek player with no watermark
-* fallbacks for other HTML5-supported filetypes (WebM, Ogv)
+* Fallback for other HTML5-supported filetypes (MP4, WebM, Ogv)
 
 = Video.js HLS Player Plugin Usage =
 
