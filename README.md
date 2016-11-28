@@ -1,22 +1,20 @@
-# [Video.js HLS Player] for WordPress
-[Video.js HLS Player] is a user-friendly plugin that allows you to easily embed responsive/fluid (or fixed width) HLS videos into WordPress posts and pages using this customized video.js player. Embedding externally hosted .m3u8 HLS video files couldn't be easier.
-Website: <a href="https://www.socialite-media.com/videojs-hls-player-for-wordpress">https://www.socialite-media.com/videojs-hls-player-for-wordpress</a>
+# "Video.js HLS Player" for WordPress
+<a href="https://www.socialite-media.com/videojs-hls-player-for-wordpress">Video.js HLS Player</a> is a user-friendly plugin that allows you to easily embed responsive/fluid (or fixed width) HLS videos into WordPress posts and pages using this customized video.js player. Embedding externally hosted .m3u8 HLS video files couldn't be easier.
 
 <h3>Video.js HLS Player Features</h3>
 
 <ul>
 	<li>Embed HLS video package into a post/page or anywhere on your WordPress site</li>
-	<li>Embed MP4 video files into a post/page or anywhere on your WordPress site</li>
 	<li>Embed responsive videos for a better user experience while viewing from a mobile device</li>
 	<li>Embed HTML5 videos which are compatible with all major browsers</li>
 	<li>Embed videos with poster images</li>
 	<li>Embed videos using videojs player</li>
 	<li>Automatically play a video when the page is rendered</li>
-	<li>Embed videos uploaded to your WordPress media library using direct links in the shortcode</li>
+	<li>Embed fallback videos uploaded to your WordPress media library using direct links in the shortcode</li>
 	<li>No setup required, simply install and start embedding videos</li>
 	<li>Lightweight and compatible with the latest version of WordPress</li>
 	<li>Clean and sleek player with no watermark</li>
-	<li>Fallbacks for other HTML5-supported filetypes (MP4, WebM, Ogv)</li>
+	<li>Fallback for other HTML5-supported filetypes (MP4, WebM, Ogv)</li>
 </ul>
 
 <h3>Video.js HLS Player Plugin Usage</h3>
