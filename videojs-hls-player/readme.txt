@@ -1,10 +1,10 @@
 === Video.js HLS Player ===
 Contributors: star2dev
-Donate link: https://www.socialite-media.com/videojs-hls-player-for-wordpress
+Donate link: https://star2dev.github.io/
 Tags: video, wpvideo, hls, flash, html5, iPad, iphone, ipod, mobile, playlists, embed video, videojs, flash player, player, video player, embed, lightweight, minimal, myvideo, responsive  
 Requires at least: 4.2
-Tested up to: 4.7
-Stable tag: 1.0.2
+Tested up to: 5.5.3
+Stable tag: 1.0.3
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -12,7 +12,7 @@ Easily embed responsive/fluid (or fixed width) HLS videos into WordPress posts a
 
 == Description ==
 
-[Video.js HLS Player](https://www.socialite-media.com/videojs-hls-player-for-wordpress) is a user-friendly plugin that allows you to easily embed responsive/fluid (or fixed width) HLS videos into WordPress posts and pages using this customized video.js player. Embedding externally hosted .m3u8 HLS video files couldn't be easier.
+[Video.js HLS Player](https://github.com/star2dev/Video.js-HLS-Player-for-WordPress) is a user-friendly plugin that allows you to easily embed responsive/fluid (or fixed width) HLS videos into WordPress posts and pages using this customized video.js player. Embedding externally hosted .m3u8 HLS video files couldn't be easier.
 
 = Video.js HLS Player Features =
 
@@ -111,7 +111,7 @@ Force the video to play inline on iOS 10+
 
 `[videojs_hls url="https://player.vimeo.com/external/xxxxxxxxx.m3u8" inline="true"]`
 
-For detailed documentation please visit the [Video.js HLS Player](https://www.socialite-media.com/videojs-hls-player-for-wordpress) plugin page
+For detailed documentation please visit the [Video.js HLS Player](https://github.com/star2dev/Video.js-HLS-Player-for-WordPress) plugin page
 
 == Installation ==
 
@@ -136,12 +136,16 @@ Yes.
 
 == Screenshots ==
 
-For screenshots please visit the [Video.js HLS Player] (https://www.socialite-media.com/videojs-hls-player-for-wordpress) plugin page
+For screenshots please visit the [Video.js HLS Player] (https://github.com/star2dev/Video.js-HLS-Player-for-WordPress) plugin page
 
 == Upgrade Notice ==
 none
 
 == Changelog ==
+
+= 1.0.3 =
+
+* Update to latest vjs.zencdn.net 
 
 = 1.0.2 =
 

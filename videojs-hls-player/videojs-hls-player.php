@@ -1,10 +1,10 @@
 <?php
 /*
 Plugin Name: Video.js HLS Player
-Version: 1.0.2
-Plugin URI: http://www.socialite-media.com/videojs-hls-player-for-wordpress
+Version: 1.0.3
+Plugin URI: https://github.com/star2dev/Video.js-HLS-Player-for-WordPress
 Author: Bruce Galpin
-Author URI: http://www.socialite-media.com/
+Author URI: https://star2dev.github.io/
 Description: Easily embed responsive/fluid (or fixed width) HLS videos into WordPress posts and pages using this customized video.js player. Embedding externally hosted .m3u8 HLS video files couldn't be easier.
 Text Domain: videojs-hls-player
 Domain Path: /languages
@@ -19,7 +19,7 @@ if (!class_exists('VIDEOJS_HLS_PLAYER'))
 {
     class VIDEOJS_HLS_PLAYER 
 	{
-        var $plugin_version = '1.0.2';
+        var $plugin_version = '1.0.3';
 		
         function __construct() 
 		{
@@ -76,7 +76,7 @@ if (!class_exists('VIDEOJS_HLS_PLAYER'))
 
         function options_page() 
 		{
-            $url = "http://www.socialite-media.com/videojs-hls-player-for-wordpress";
+            $url = "https://github.com/star2dev/Video.js-HLS-Player-for-WordPress";
             $link_text = sprintf(wp_kses(__('For detailed documentation please visit the plugin homepage <a target="_blank" href="%s">here</a>.', 'videojs-hls-player'), array('a' => array('href' => array(), 'target' => array()))), esc_url($url));
             
 			echo '<div class="wrap"><h2>Video.js HLS Player - v' . $this->plugin_version . '</h2>';
@@ -100,13 +100,13 @@ function videojs_hls_player_enqueue_scripts()
         
 		wp_register_script(
 			'videojs', 
-			'//vjs.zencdn.net/5.9.2/video.js', 
+			'//vjs.zencdn.net/7.8.4/video.js', 
 			array('jquery'), 
 			VIDEOJS_HLS_PLAYER_VERSION, 
 			true
 		);
         wp_enqueue_script('videojs');
-        
+        /*
 		wp_register_script(
 			'videojs-hls', 
 			$plugin_url . '/videojs-contrib-hls/videojs-contrib-hls.min.js', 
@@ -115,7 +115,7 @@ function videojs_hls_player_enqueue_scripts()
 			true
 		);
         wp_enqueue_script('videojs-hls');
-        
+        */
 		wp_register_script(
 			'videojs-ie8', 
 			'//vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js', 
@@ -123,7 +123,7 @@ function videojs_hls_player_enqueue_scripts()
 			VIDEOJS_HLS_PLAYER_VERSION
 		);
         wp_enqueue_script('videojs-ie8');
-        
+        /*
 		wp_register_script(
 			'videojs-airplay', 
 			$plugin_url . '/videojs-airplay/videojs.airplay.js', 
@@ -132,7 +132,7 @@ function videojs_hls_player_enqueue_scripts()
 			true
 		);
         wp_enqueue_script('videojs-airplay');
-        
+        */
 		wp_register_script(
 			'videojs-custom', 
 			$plugin_url . '/videojs-hls-player.js', 
@@ -145,15 +145,16 @@ function videojs_hls_player_enqueue_scripts()
 		// LOAD ALL CSS
 		wp_register_style(
 			'videojs', 
-			'//vjs.zencdn.net/5.9.2/video-js.css'
+			'//vjs.zencdn.net/7.8.4/video-js.css'
 		);
         wp_enqueue_style('videojs');
         
 		wp_register_style('videojs-style', $plugin_url . '/videojs-hls-player.css');
         wp_enqueue_style('videojs-style');
-        
+        /*
 		wp_register_style('videojs-airplay', $plugin_url . '/videojs-airplay/videojs.airplay.css');
         wp_enqueue_style('videojs-airplay');
+        */
     }
 }
 
