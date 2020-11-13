@@ -136,6 +136,12 @@
 </ol>
 <h3>Changelog</h3>
 
+<h4>1.0.3</h4>
+
+<ul>
+	<li>Update to latest vjs.zencdn.net</li>
+</ul>
+
 <h4>1.0.2</h4>
 
 <ul>
